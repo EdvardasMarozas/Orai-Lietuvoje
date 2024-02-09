@@ -1,0 +1,30 @@
+<%- include("./layout/header") %>
+
+<div class="list-group mx-auto">
+  <% for(let q of cities) {%>
+  <div
+    class="list-group-item list-group-item-action flex-column align-items-start"
+  >
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-3"><a href="/<%= q.cityname %>"><%= q.cityname %></a></h5>
+      <large>diena</large>
+    </div>
+    <ul>
+      <% for (let i in q.day1.day) { %>
+      <li><%= i %> : <%= q.day1.day[i] %></li>
+      <% } %>
+    </ul>
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1"></h5>
+      <large>vakaras</large>
+    </div>
+    <ul>
+      <% for (let i in q.day1.night) { %>
+      <li><%= i %> : <%= q.day1.night[i] %></li>
+      <% } %>
+    </ul>
+  </div>
+  <% } %>
+</div>
+
+<%- include("./layout/footer") %>

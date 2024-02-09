@@ -1,0 +1,19 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+nav{
+  background-color: rgba(245, 245, 245, 0.6);
+}
+.navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+}
+body{
+  background-image: url('../images/main_header_background.jpg');
+  background-size: cover;
+}
